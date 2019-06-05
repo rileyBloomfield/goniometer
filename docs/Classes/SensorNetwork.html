@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SensorNetwork Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/SensorNetwork" class="dashAnchor"></a>
+
+    <a title="SensorNetwork Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (97% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      SensorNetwork Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ConfigureSensorsViewController.html">ConfigureSensorsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DisplayViewController.html">DisplayViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MainNavigationController.html">MainNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Quaternion.html">Quaternion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SensorConfiguration.html">SensorConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SensorNetwork.html">SensorNetwork</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SensorNetworkDelegate.html">SensorNetworkDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>SensorNetwork</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">SensorNetwork</span></code></pre>
+
+                </div>
+              </div>
+            <p>Sensor network organizing and controlling all sensors as a single network unit. Responsible for all sensor operations from discovery to streaming data, getting synchronized readings, maintaining connection status and disconnection.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC6sharedACvZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC6sharedACvZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton sensor network object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span> <span class="o">=</span> <span class="kt">SensorNetwork</span><span class="p">();</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC9isOrderedSbv"></a>
+                    <a name="//apple_ref/swift/Property/isOrdered" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC9isOrderedSbv">isOrdered</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the sensors have been ordered explicitly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">isOrdered</span><span class="p">:</span><span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool representing if the sensors in the network have had their order specified.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC11isConnectedSbv"></a>
+                    <a name="//apple_ref/swift/Property/isConnected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC11isConnectedSbv">isConnected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the sensors in the sensor network are currently connected.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">isConnected</span><span class="p">:</span><span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool representing if the sensors are currently connected.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC11sensorCountSiv"></a>
+                    <a name="//apple_ref/swift/Property/sensorCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC11sensorCountSiv">sensorCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of sensors in the sensor network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    The value consideres sensors in the network in all states, not only connected sensors.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">sensorCount</span><span class="p">:</span><span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of sensors currently active.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC11hasDelegateSbv"></a>
+                    <a name="//apple_ref/swift/Property/hasDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC11hasDelegateSbv">hasDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the network has a delegate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">hasDelegate</span><span class="p">:</span><span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool representing if an application delegate has been set to handle network events.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC11sensorNamesSaySSGv"></a>
+                    <a name="//apple_ref/swift/Property/sensorNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC11sensorNamesSaySSGv">sensorNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sensor names as assigned to the sensors previously.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    If names have not been assigned, the sensors could have names previously assigned by other applications.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">sensorNames</span><span class="p">:[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string array of all sensors ordered as they currently exist.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC11setDelegateyAA03AppF0CF"></a>
+                    <a name="//apple_ref/swift/Method/setDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC11setDelegateyAA03AppF0CF">setDelegate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Assign a delegate to the sensor network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Classes/AppDelegate.html">AppDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An application delegate that implementes the sensor network delegate protocol.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC09getNameOfC0SSSi7atIndex_tF"></a>
+                    <a name="//apple_ref/swift/Method/getNameOfSensor(atIndex:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC09getNameOfC0SSSi7atIndex_tF">getNameOfSensor(atIndex:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the name of a particular sensor in the network order.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getNameOfSensor</span><span class="p">(</span><span class="nv">atIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>atIndex</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index of the sensor in the network.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC020setNumberOfSensorsInD0ySiF"></a>
+                    <a name="//apple_ref/swift/Method/setNumberOfSensorsInNetwork(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC020setNumberOfSensorsInD0ySiF">setNumberOfSensorsInNetwork(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the number of sensors that the network will use.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Changing this number will have no effect on the network once sensor discovery has finished. It is used to limit discovery to the specified number of sensors.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setNumberOfSensorsInNetwork</span><span class="p">(</span><span class="n">_</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>count</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of sensors that the network will use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC28getSynchronizedBatteryStatusyySaySiGc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getSynchronizedBatteryStatus(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC28getSynchronizedBatteryStatusyySaySiGc10completion_tF">getSynchronizedBatteryStatus(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a synchronized reading of battery levels for all sensors.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    The number of readings returned will be equal to the number of sensors in the sensor network
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getSynchronizedBatteryStatus</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will return an array of integer readings asynchronously. A reading of zero indicates a failure to obtain the reading from a sensor at the same index.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC27getSynchronizedSignalStatusyySaySiGc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getSynchronizedSignalStatus(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC27getSynchronizedSignalStatusyySaySiGc10completion_tF">getSynchronizedSignalStatus(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a synchronized reading of signal levels for all sensors.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    The number of readings returned will be equal to the number of sensors in the sensor network
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getSynchronizedSignalStatus</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will return an array of integer readings asynchronously. A reading of zero indicates a failure to obtain the reading from a sensor at the same index.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC12getStepCountyySiSgc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getStepCount(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC12getStepCountyySiSgc10completion_tF">getStepCount(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get an averaged step count reading from each sensor.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    The step count will be recorded individually for each sensor and averaged.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getStepCount</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">steps</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will optionally return the average number of steps recorded from each sensor. Nil will be returned if one or more sensors cannot be polled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC14resetStepCountyySbc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/resetStepCount(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC14resetStepCountyySbc10completion_tF">resetStepCount(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset sensor network step count.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">resetStepCount</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will return true indicating all step counts could be reset or false if one or more sensors could not be reset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC15discoverSensorsyySbc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/discoverSensors(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC15discoverSensorsyySbc10completion_tF">discoverSensors(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Discover nearby sensors to add to the network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Sensor network discovery will first disconnect existing network sensors. Discovery will then continue until the previously set <strong>numberOfSensorsInNetwork</strong> is reached. The sensors have been discovered but have not been connected.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">discoverSensors</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will return true indicating the desired number of sensors have been discovered.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC26connectAndConfigureSensorsyySbc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/connectAndConfigureSensors(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC26connectAndConfigureSensorsyySbc10completion_tF">connectAndConfigureSensors(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect and configure to all previously discovered sensors.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    If sensor configurations do not match the sensor configuration required (programmed by another application), the configuration will be reset and the sensor will be reconnected automatically. This method will run as a repeated fallable task to attempt to connect even if initial failure is detected.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">connectAndConfigureSensors</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="o">=</span> <span class="p">{</span><span class="n">_</span> <span class="k">in</span><span class="p">})</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional escaping completion parameter will return true indicating that all sensors have been connected successfully and their configurations are appropriate for use with this application. A false completion indicates that the number of attempts has been reached without successful connection, or the configurations could not be set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC015reconnectSingleC0ySiF"></a>
+                    <a name="//apple_ref/swift/Method/reconnectSingleSensor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC015reconnectSingleC0ySiF">reconnectSingleSensor(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reconnect a single sensor after individual failure has been detected.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    This method will run as a repeated fallable task to attempt to connect even if initial failure is detected. This method will return if the network has been intentionally disconnected, to prevent reconnection when network disconnection has been intended.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">reconnectSingleSensor</span><span class="p">(</span><span class="n">_</span> <span class="nv">sensorIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sensorIndex</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index of the sensor in the network that should be reconnected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC17disconnectSensorsyyF"></a>
+                    <a name="//apple_ref/swift/Method/disconnectSensors()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC17disconnectSensorsyyF">disconnectSensors()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attempt to disconnect all sensors</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    This method will trigger a disconnect on all sensors and set the network status as disconnected first, even if not all sensors disconnect successfully. This is to ensure the network does not reconnect to the disconnected sensors when a disconnect is intended.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">disconnectSensors</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC15resetAllSensorsyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetAllSensors()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC15resetAllSensorsyyF">resetAllSensors()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perform a sensor reset on all sensors in the network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">resetAllSensors</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC25resetSensorsConfigurationyySbc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/resetSensorsConfiguration(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC25resetSensorsConfigurationyySbc10completion_tF">resetSensorsConfiguration(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset the sensor configuration for all sensors in the network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    This method will delete all logs existing on all sensors and set a new configuration object according to the sensor configuration file present in the application. This method will run as a repeated fallable task to attempt to connect even if initial failure is detected.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">resetSensorsConfiguration</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will return true indicating that all sensors have been connected successfully and their configurations are appropriate for use with this application. A false completion indicates that the number of attempts has been reached without successful connection, or the configurations could not be set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC25orderSensorsByButtonPressyySic06buttonI7Handler_ySbc10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/orderSensorsByButtonPress(buttonPressHandler:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC25orderSensorsByButtonPressyySic06buttonI7Handler_ySbc10completiontF">orderSensorsByButtonPress(buttonPressHandler:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset the sensor configuration for all sensors in the network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    This method will enable button press handlers and flashing LEDs on all sensors. If the method is not completed, these will persist on the sensors and may drain the battery. The method must complete to allow sensors to return to a low power state.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">orderSensorsByButtonPress</span><span class="p">(</span><span class="nv">buttonPressHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">sensorsOrdered</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping button press handler parameter is called when an individual sensor has been ordered. Escaping completion handler is called when all sensors in the network have been ordered.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC25enableQuaternionStreamingyySayAA0F0CGc7handler_tF"></a>
+                    <a name="//apple_ref/swift/Method/enableQuaternionStreaming(handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC25enableQuaternionStreamingyySayAA0F0CGc7handler_tF">enableQuaternionStreaming(handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable notifications for streaming quaternions.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Once streaming notifications are enabled, they must be stopped before application exit. Sensor battery life could be reduced if streaming is not stopped on application exit.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">enableQuaternionStreaming</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">quaternions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Quaternion.html">Quaternion</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will return a synchronized set of quaternions with size equal to the number of sensors in the network.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC26disableQuaternionStreamingyyF"></a>
+                    <a name="//apple_ref/swift/Method/disableQuaternionStreaming()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC26disableQuaternionStreamingyyF">disableQuaternionStreaming()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops quaternion streaming notifications.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">disableQuaternionStreaming</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC018getLoggingStatusofC0SbSi11sensorIndex_tF"></a>
+                    <a name="//apple_ref/swift/Method/getLoggingStatusofSensor(sensorIndex:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC018getLoggingStatusofC0SbSi11sensorIndex_tF">getLoggingStatusofSensor(sensorIndex:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get logging status of an individual sensor in the network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getLoggingStatusofSensor</span><span class="p">(</span><span class="nv">sensorIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sensorIndex</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index of the specified sensor in the sensor network.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool indicating if the sensor specified is currently logging quaternions.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC39retrieveAllQuaternionLogsAndKeepLoggingXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/retrieveAllQuaternionLogsAndKeepLogging(logReadyHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC39retrieveAllQuaternionLogsAndKeepLoggingXeXeF">retrieveAllQuaternionLogsAndKeepLogging(logReadyHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin downloading quaternion log files for all sensors in the network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    If failure is detected, a sensor reconnect is attempted on the affected sensor.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">retrieveAllQuaternionLogsAndKeepLogging</span><span class="p">(</span><span class="nv">logReadyHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">sensorIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">log</span><span class="p">:</span> <span class="p">[</span><span class="kt">MBLQuaternionData</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping log ready handler returns a log file and the index of the associated sensors once a download is complete.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC23startLoggingQuaternionsyySbc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/startLoggingQuaternions(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC23startLoggingQuaternionsyySbc10completion_tF">startLoggingQuaternions(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin logging quaternions on all sensors in the network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Starting logging is idempotent.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">startLoggingQuaternions</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="o">=</span> <span class="p">{</span><span class="n">_</span> <span class="k">in</span><span class="p">})</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional escaping completion handler returns a Bool value indicating if all sensors began logging successfully.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC22stopLoggingQuaternionsyySbc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/stopLoggingQuaternions(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC22stopLoggingQuaternionsyySbc10completion_tF">stopLoggingQuaternions(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop logging quaternions on all sensors in the network.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Stopping logging is idempotent.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">stopLoggingQuaternions</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="o">=</span> <span class="p">{</span><span class="n">_</span> <span class="k">in</span><span class="p">})</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional escaping completion handler returns a Bool value indicating if all sensors stopped logging successfully.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11kneeFlexion13SensorNetworkC19performFallibleTaskySi13numberOfTimes_yyyc_ys5Error_pctc4taskyyc7successysAF_pc7failuretF"></a>
+                    <a name="//apple_ref/swift/Method/performFallibleTask(numberOfTimes:task:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11kneeFlexion13SensorNetworkC19performFallibleTaskySi13numberOfTimes_yyyc_ys5Error_pctc4taskyyc7successysAF_pc7failuretF">performFallibleTask(numberOfTimes:task:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perform a sensor network task multiple times to prevent failure.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    There is a three second delay between task retries.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">performFallibleTask</span><span class="p">(</span><span class="nv">numberOfTimes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">task</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="n">_</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>numberOfTimes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of times to attempt the task before declaring failure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The task to be performed multiple times.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code block to be executed on failure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Code block to be executed on failure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Escaping completion parameter will success or failure depending on completion of the task.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>Copyright Riley Bloomfield, 2017</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

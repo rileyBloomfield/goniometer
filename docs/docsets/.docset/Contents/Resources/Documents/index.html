@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+           Docs
+        </a>
+         (97% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html"> Reference</a>
+      <img class="carat" src="img/carat.png" />
+        Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ConfigureSensorsViewController.html">ConfigureSensorsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DisplayViewController.html">DisplayViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MainNavigationController.html">MainNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Quaternion.html">Quaternion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SensorConfiguration.html">SensorConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SensorNetwork.html">SensorNetwork</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SensorNetworkDelegate.html">SensorNetworkDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='digital-goniometer' class='heading'>Digital Goniometer</h1>
+
+<p><img src="../userRes/icon.png" alt="logo"></p>
+
+<p>Welcome to the <strong>Digital Goniometer</strong> user manual. Below you will find a quick introduction to the main features of the software and the steps required for use.</p>
+<h2 id='contents' class='heading'>Contents</h2>
+
+<p><a href="#connecting-sensors">Connecting Sensors</a><br>
+<a href="#displaying-flexion">Displaying Flexion</a>  </p>
+<h2 id='a-name-connecting-sensors-a-connecting-sensors' class='heading'><a name="connecting-sensors"></a>Connecting Sensors</h2>
+
+<p><strong>Searching:</strong> Two sensors will be found. If the application cannot connect to two sensors, this will search indefinitely.</p>
+
+<p><strong>Connecting:</strong> The first two sensors discovered will be connected. There is currently no option to distinguish between discovered sensors.</p>
+
+<p><strong>Configurations:</strong> If the sensors have been used previously with an alternative application, the sensor configurations may be reset. This process will happen automatically if required but may increase connection time to a few minutes.</p>
+
+<p><img src="../userRes/connecting.png" alt="patientSelection"></p>
+<h2 id='a-name-displaying-flexion-a-displaying-flexion' class='heading'><a name="displaying-flexion"></a>Displaying Flexion</h2>
+
+<p><strong>Flexion:</strong> The flexion angle of the instrumetned limb is shown in degrees on the live display.</p>
+
+<p><strong>Tare:</strong> Pressing the tare button is used to apply an offset to all future readings streamed from the sensors. The result of applying this offset brings the current tare position to a zeroed location.</p>
+
+<p><strong>Reset Tare:</strong> The previously set tare orientations obtained will be reset, showing flexion angles computed from the sensor default readings.</p>
+
+<p><strong>Connecting:</strong> Exit to the previous <a href="#connecting-sensors">connecting sensors</a> screen to reset the current connection and rediscover sensors for connection.</p>
+
+<p><img src="../userRes/display.png" alt="newPatient"></p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>Copyright Riley Bloomfield, 2017</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

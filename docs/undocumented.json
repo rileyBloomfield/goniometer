@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Riley/Desktop/kneeFlexion/kneeFlexion/kneeFlexion/AppDelegate.swift",
+      "line": null,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Riley/Desktop/kneeFlexion/kneeFlexion/kneeFlexion/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Riley/Desktop/kneeFlexion/kneeFlexion"
+}
